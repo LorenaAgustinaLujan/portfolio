@@ -1,13 +1,10 @@
 {
-  "compileOnSave": true,
+ 
   "compilerOptions":  {
+
     "outDir": "./built",
         "allowJs": true,
-    
-        "allowUnreachableCode": false,
-        "noImplicitReturns": true,
-        "noImplicitAny": true,
-        "typeRoots": [ "./typings" ],
+  
        
 
     /* Visit https://aka.ms/tsconfig to read more about this file */
@@ -110,16 +107,6 @@
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
   }
-
-  ,
-    "include": [
-        "./**/*"
-    ],
-    "exclude": [
-        "./plugins/**/*",
-        "./typings/**/*",
-        "./built/**/*" // This is what fixed it!
-    ]
 }
 
 
