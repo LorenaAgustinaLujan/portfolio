@@ -1,8 +1,8 @@
 div{
-    background-color:blueviolet;
+    background-color:rgb(203, 183, 223);
 }
 
 app-social{
     float: right;
-    margin-top: 25px;
+    margin-top: 25px
 }
