@@ -9,7 +9,19 @@
                 <a href=""><img src="../../../assets/facebook.png" alt="facebook"></a>
                 <a href=""><img src="../../../assets/github.png" alt="github"></a>
                 <a href=""><img src="../../../assets/instagram.png" alt="instagram"> </a>
-                <div class="button" class="btn btn-outline-light" (click)="login()">INGRESAR</div>
+                <div class="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">INGRESAR</div>
+                <div class="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">CERRAR SESION</div>
         </div>
     </div>
 </div>
+
+<!--
+    en el video "Argentina Programa - YoProgramo - Proyecto Final - Parte 15 (Login con JWT)" minuto 3:28:50 tiene estcrito
+    este boton:
+
+    <div class="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">INGRESAR</div>
+
+    de la siguiente manera:
+
+    <button class="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">INGRESAR</button>
+-->
