@@ -11,10 +11,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-/**
- *
- * @author Usuario
- */
+
 public class UsuarioPrincipal implements UserDetails {
 
     private String nombre;
@@ -56,6 +53,11 @@ public class UsuarioPrincipal implements UserDetails {
     }
 
     @Override
+    public String getUsername() {
+        return nombreUsuario;
+    }
+
+    @Override
     public boolean isAccountNonExpired() {
         return true;
     }
@@ -74,10 +76,4 @@ public class UsuarioPrincipal implements UserDetails {
     public boolean isEnabled() {
         return true;
     }
-
-    @Override
-    public String getUsername() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
 }

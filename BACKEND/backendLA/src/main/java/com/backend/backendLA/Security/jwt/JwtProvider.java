@@ -56,4 +56,8 @@ public class JwtProvider {
         }
         return false;
     }
+
+    String getNombreUSuarioFromToken(String token) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
